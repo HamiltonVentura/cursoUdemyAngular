@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
+import { AppComponent } from '../../app.component';
 
 @Component({
   selector: 'app-perfil',
@@ -8,6 +9,7 @@ import { Component } from '@angular/core';
   styleUrl: './perfil.component.scss'
 })
 export class PerfilComponent {
+  nome = "joao das Neves";
 
 
 }

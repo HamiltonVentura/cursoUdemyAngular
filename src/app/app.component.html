@@ -14,6 +14,10 @@ Titulo e subtitulo Juntos :  {{tudo()}}
 
 <button (click)="updateTitulo()"> Atualizar Titulo</button>
 <button (click)="updateSubTitulo()">Atualizar subtitulo</button>
+valor calculado{{calculoExemlo(23,23)}}
+
+<button [disabled]="isDisable"> desabilitar usuário</button>
+
 <ul>
   <button><a [routerLink]="['/perfil']">Perfil</a></button>
 </ul>

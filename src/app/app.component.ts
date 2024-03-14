@@ -11,14 +11,15 @@ import { RouterLink } from '@angular/router';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
+
+
+ public isDisable =  true;
+
  public title = signal("Bem vindo a suas tarefas");
  public subtitulo = signal("subtitulos");
  public nome = signal ("hamilton");
 
- //ele vai computar e ficar observando se ouver alguma mudança ele irá atualizar os dados
- // ele computa as alterações
-
- public tudo = computed( ()=>{
+ public tudo = computed( ()=> {
     return this.title() + this.subtitulo();
  })
 
@@ -30,4 +31,7 @@ export class AppComponent {
   return this.subtitulo.set("Analista de Sistemas");
  }
 
+ calculoExemlo(numero1:number,numero2:number){
+  return numero1+numero2;
+ }
 }
